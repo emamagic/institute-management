@@ -7,17 +7,24 @@ import com.emamagic.institutemanagementquestion.entity.Type;
 import com.emamagic.institutemanagementquestion.repository.ExamQuestionRepository;
 import com.emamagic.institutemanagementquestion.repository.QuestionRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.mongodb.core.MongoTemplate;
+import org.springframework.data.mongodb.core.query.Criteria;
+import org.springframework.data.mongodb.core.query.Query;
+import org.springframework.data.mongodb.core.query.Update;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Map;
+import java.util.NoSuchElementException;
 
 @Service
 @RequiredArgsConstructor
 public class QuestionServiceImpl implements QuestionService {
     private final QuestionRepository repo;
     private final ExamQuestionRepository scoreRepo;
+    ///  for bulk update
+    private final MongoTemplate mongoTemplate;
 
     @Override
     public List<QuestionResponse> getAllForBank(Long userId) {
@@ -61,11 +68,31 @@ public class QuestionServiceImpl implements QuestionService {
     @Transactional
     @Override
     public void add(Long userId, AddQuestionRequest req) {
+        Question currentQuestion = repo.findById(req.questionId())
+                .orElseThrow(() -> new NoSuchElementException("question not found"));
 
+        currentQuestion.addExamId(req.examId());
+
+        scoreRepo.save(ExamQuestion.builder()
+                .questionId(req.questionId())
+                .examId(req.examId())
+                .score(Integer.valueOf(req.score()))
+                .build());
     }
 
     @Override
     public ApprovedQuestionResponse approveQuestions(Long userId, Long examId) {
+        Query query = new Query();
+        query.addCriteria(Criteria.where("creator_id").is(userId)
+                .and("exam_id").in(examId));
+        Update update = new Update();
+        update.set("isApproved", true);
+
+        var result = mongoTemplate.updateMulti(query, update, Question.class);
+
+        ApprovedQuestionResponse response = new ApprovedQuestionResponse();
+        response.setApprovedCount(result.getModifiedCount());
+
         return null;
     }
 
@@ -83,24 +110,19 @@ public class QuestionServiceImpl implements QuestionService {
 
     private QuestionResponse mapTo(Question q, Long examId) {
         //todo: find all questionExam and assign them to the corresponded question in memory
-        Integer score = 0;
-        if (examId == null) {
-//            score = scoreRepo
-        } else {
-            score = scoreRepo.findByExamIdAndQuestionId(examId, q.getId()).getScore();
-        }
+        String score = (examId != null) ? String.valueOf(scoreRepo.findByExamIdAndQuestionId(examId, q.getId()).getScore()) : null;
 
         return new QuestionResponse(
                 q.getId(),
                 q.getType().name(),
                 q.getTitle(),
-                String.valueOf(score),
+                score,
                 q.getIsApproved(),
                 q.getBody()
         );
     }
 
     private Map<String, Object> generateBody(CreateQuestionRequest req) {
-
+        return null;
     }
 }

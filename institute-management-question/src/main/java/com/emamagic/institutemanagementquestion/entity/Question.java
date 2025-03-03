@@ -9,6 +9,7 @@ import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -32,12 +33,14 @@ public class Question {
     @Field("body")
     private Map<String, Object> body;
 
-
     public void addExamId(Long examId) {
+        //todo: could it be optimized??
+        examIds = new ArrayList<>(examIds);
         examIds.add(examId);
     }
 
     public void addExamId(String examId) {
+        examIds = new ArrayList<>(examIds);
         Long id = Long.valueOf(examId);
         examIds.add(id);
     }
