@@ -1,0 +1,35 @@
+services:
+
+  postgres:
+    container_name: institute-management-db
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: emamagic
+      POSTGRES_PASSWORD: 1377
+      POSTGRES_DB: institute-management
+    ports:
+      - "5432:5432"
+
+  redis:
+    container_name: institute-management-redis
+    image: bitnami/redis:latest
+    environment:
+      ALLOW_EMPTY_PASSWORD: YES
+    ports:
+      - '6379:6379'
+
+  mongo:
+    container_name: institute-management-mongo
+    image: mongo:latest
+    ports:
+      - '27017:27017'
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: emamagic
+      MONGO_INITDB_ROOT_PASSWORD: 1377
+
+  mail-dev:
+    container_name: institute-management-mail
+    image: maildev/maildev
+    ports:
+      - "1080:1080"
+      - "1025:1025"

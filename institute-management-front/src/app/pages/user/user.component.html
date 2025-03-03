@@ -1,0 +1,38 @@
+<div class="filter-container">
+  <input type="text" placeholder="Search by name or email" [(ngModel)]="searchTerm" (input)="onSearchInput()" />
+
+  <select [(ngModel)]="selectedRole" (change)="searchUsers()">
+    <option value="">All Roles</option>
+    <option *ngFor="let role of roles" [value]="role">{{ role }}</option>
+  </select>
+
+  <select [(ngModel)]="selectedGender" (change)="searchUsers()">
+    <option value="">All Genders</option>
+    <option value="Male">Male</option>
+    <option value="Female">Female</option>
+  </select>
+
+  <input type="number" placeholder="Age" [(ngModel)]="selectedAge" (input)="searchUsers()" />
+</div>
+
+<div class="user-container">
+  <div class="user-card" *ngFor="let user of users" (click)="openEditDialog(user)">
+    <div class="user-info">
+      <h3>{{ user.name }}</h3>
+      <p>Email: {{ user.email }}</p>
+      <p>Age: {{ user.age }}</p>
+      <p>Gender: {{ user.gender }}</p>
+      <p>Role: {{ user.role }}</p>
+      <p>Verified: {{ user.isVerified ? 'Yes' : 'No' }}</p>
+    </div>
+    <button *ngIf="!user.isApproved" (click)="approveUser(user); $event.stopPropagation()">
+      Approve
+    </button>
+  </div>
+</div>
+
+<div class="pagination" [hidden]="users.length==0">
+  <button [disabled]="pageNumber === 1" (click)="prevPage()">Previous</button>
+  <span>Page {{ pageNumber }} of {{ totalPages }}</span>
+  <button [disabled]="pageNumber >= totalPages " (click)="nextPage()">Next</button>
+</div>

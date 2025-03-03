@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="631d7dd1-5c31-4cee-b3f0-1148b11c72c3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-back/HELP.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-back/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-back/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-back/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-back/src/main/java/com/emamagic/institutemanagement/InstituteManagementApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-back/src/main/java/com/emamagic/institutemanagement/common/AppAuditorAware.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-back/src/main/java/com/emamagic/institutemanagement/common/AppMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-back/src/main/java/com/emamagic/institutemanagement/common/BaseEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-back/src/main/java/com/emamagic/institutemanagement/common/PageResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-back/src/main/java/com/emamagic/institutemanagement/config/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-back/src/main/java/com/emamagic/institutemanagement/config/CodeVerificationConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-back/src/main/java/com/emamagic/institutemanagement/config/JwtFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-back/src/main/java/com/emamagic/institutemanagement/config/OpenApiConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-back/src/main/java/com/emamagic/institutemanagement/config/ProfileCompletionInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-back/src/main/java/com/emamagic/institutemanagement/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-back/src/main/java/com/emamagic/institutemanagement/config/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-back/src/main/java/com/emamagic/institutemanagement/entity/Course.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-back/src/main/java/com/emamagic/institutemanagement/entity/Exam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-back/src/main/java/com/emamagic/institutemanagement/entity/Quiz.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-back/src/main/java/com/emamagic/institutemanagement/entity/UserApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-back/src/main/java/com/emamagic/institutemanagement/entity/UserRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-back/src/main/java/com/emamagic/institutemanagement/exception/CodeValidationException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-back/src/main/java/com/emamagic/institutemanagement/exception/EmailAlreadyExistException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-back/src/main/java/com/emamagic/institutemanagement/exception/ExceptionResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-back/src/main/java/com/emamagic/institutemanagement/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-back/src/main/java/com/emamagic/institutemanagement/exception/ProfileCompletionException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-back/src/main/java/com/emamagic/institutemanagement/feature/auth/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-back/src/main/java/com/emamagic/institutemanagement/feature/auth/AuthService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-back/src/main/java/com/emamagic/institutemanagement/feature/auth/AuthServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-back/src/main/java/com/emamagic/institutemanagement/feature/auth/code_verification/CodeVerificationCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-back/src/main/java/com/emamagic/institutemanagement/feature/auth/code_verification/CodeVerificationCacheImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-back/src/main/java/com/emamagic/institutemanagement/feature/auth/dto/CodeVerificationRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-back/src/main/java/com/emamagic/institutemanagement/feature/auth/dto/LoginRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-back/src/main/java/com/emamagic/institutemanagement/feature/auth/dto/LoginResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-back/src/main/java/com/emamagic/institutemanagement/feature/auth/dto/RegisterRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-back/src/main/java/com/emamagic/institutemanagement/feature/auth/jwt/JwtService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-back/src/main/java/com/emamagic/institutemanagement/feature/auth/jwt/JwtServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-back/src/main/java/com/emamagic/institutemanagement/feature/auth/jwt/JwtToken.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-back/src/main/java/com/emamagic/institutemanagement/feature/course/CourseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-back/src/main/java/com/emamagic/institutemanagement/feature/course/CourseRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-back/src/main/java/com/emamagic/institutemanagement/feature/course/CourseService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-back/src/main/java/com/emamagic/institutemanagement/feature/course/CourseServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-back/src/main/java/com/emamagic/institutemanagement/feature/course/dto/CourseRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-back/src/main/java/com/emamagic/institutemanagement/feature/course/dto/CourseResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-back/src/main/java/com/emamagic/institutemanagement/feature/email/EmailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-back/src/main/java/com/emamagic/institutemanagement/feature/email/EmailServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-back/src/main/java/com/emamagic/institutemanagement/feature/email/EmailTemplateName.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-back/src/main/java/com/emamagic/institutemanagement/feature/exam/ExamController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-back/src/main/java/com/emamagic/institutemanagement/feature/exam/ExamRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-back/src/main/java/com/emamagic/institutemanagement/feature/exam/ExamService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-back/src/main/java/com/emamagic/institutemanagement/feature/exam/ExamServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-back/src/main/java/com/emamagic/institutemanagement/feature/exam/dto/ExamRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-back/src/main/java/com/emamagic/institutemanagement/feature/exam/dto/ExamResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-back/src/main/java/com/emamagic/institutemanagement/feature/user/Gender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-back/src/main/java/com/emamagic/institutemanagement/feature/user/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-back/src/main/java/com/emamagic/institutemanagement/feature/user/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-back/src/main/java/com/emamagic/institutemanagement/feature/user/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-back/src/main/java/com/emamagic/institutemanagement/feature/user/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-back/src/main/java/com/emamagic/institutemanagement/feature/user/UserSpecification.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-back/src/main/java/com/emamagic/institutemanagement/feature/user/dto/AdminUpdateRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-back/src/main/java/com/emamagic/institutemanagement/feature/user/dto/UserResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-back/src/main/java/com/emamagic/institutemanagement/feature/user/dto/UserSearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-back/src/main/java/com/emamagic/institutemanagement/feature/user/dto/UserUpdateRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-back/src/main/java/com/emamagic/institutemanagement/feature/user/role/RoleType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-back/src/main/java/com/emamagic/institutemanagement/feature/user/role/UserRoleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-back/src/main/java/com/emamagic/institutemanagement/feature/user/role/UserRoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-back/src/main/java/com/emamagic/institutemanagement/feature/user/role/UserRoleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-back/src/main/java/com/emamagic/institutemanagement/validation/GenderValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-back/src/main/java/com/emamagic/institutemanagement/validation/UserRoleValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-back/src/main/java/com/emamagic/institutemanagement/validation/ValidGender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-back/src/main/java/com/emamagic/institutemanagement/validation/ValidUserRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-back/src/main/resources/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-back/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-back/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-back/src/main/resources/data.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-back/src/main/resources/templates/activate_account.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-back/src/test/java/com/emamagic/institutemanagement/InstituteManagementApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-back/target/classes/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-back/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-back/target/classes/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-back/target/classes/data.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-back/target/classes/templates/activate_account.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/angular.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/institute-management-front.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/app.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/app.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/app.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/app.config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/app.routes.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/pages/auth/auth.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/pages/auth/auth.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/pages/auth/auth.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/pages/course/add-course-dialog/add-course-dialog.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/pages/course/add-course-dialog/add-course-dialog.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/pages/course/add-course-dialog/add-course-dialog.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/pages/course/course-detail/course-detail.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/pages/course/course-detail/course-detail.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/pages/course/course-detail/course-detail.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/pages/course/course.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/pages/course/course.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/pages/course/course.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/pages/exam/add-exam-dialog/add-exam-dialog.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/pages/exam/add-exam-dialog/add-exam-dialog.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/pages/exam/add-exam-dialog/add-exam-dialog.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/pages/exam/exam.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/pages/exam/exam.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/pages/exam/exam.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/pages/exam/update-exam-dialog/update-exam-dialog.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/pages/exam/update-exam-dialog/update-exam-dialog.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/pages/exam/update-exam-dialog/update-exam-dialog.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/pages/home/home.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/pages/home/home.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/pages/home/home.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/pages/profile/profile.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/pages/profile/profile.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/pages/profile/profile.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/pages/user/update-user-dialog/update-user-dialog.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/pages/user/update-user-dialog/update-user-dialog.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/pages/user/update-user-dialog/update-user-dialog.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/pages/user/user-list-dialog/user-list-dialog.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/pages/user/user-list-dialog/user-list-dialog.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/pages/user/user-list-dialog/user-list-dialog.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/pages/user/user.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/pages/user/user.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/pages/user/user.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/services/api-configuration.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/services/api.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/services/base-service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/services/fn/authentication/login.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/services/fn/authentication/logout.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/services/fn/authentication/refresh.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/services/fn/authentication/register.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/services/fn/authentication/verify-code.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/services/fn/course/course.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/services/fn/course/courses.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/services/fn/course/create-1.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/services/fn/course/delete-1.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/services/fn/course/enroll-user.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/services/fn/course/update-1.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/services/fn/course/users-by-course-id.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/services/fn/course/withdrawal-user.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/services/fn/exam-controller/create.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/services/fn/exam-controller/delete.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/services/fn/exam-controller/exams.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/services/fn/exam-controller/update.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/services/fn/exam/create.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/services/fn/exam/delete.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/services/fn/exam/exams.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/services/fn/exam/update.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/services/fn/user/me.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/services/fn/user/search.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/services/fn/user/update-as-admin.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/services/fn/user/update-profile.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/services/fn/user/users.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/services/gurd/auth.guard.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/services/interceptors/error.interceptor.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/services/interceptors/jwt.interceptor.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/services/interceptors/snake-camel.interceptor.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/services/models.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/services/models/admin-update-request.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/services/models/code-verification-request.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/services/models/course-request.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/services/models/course-response.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/services/models/exam-request.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/services/models/exam-response.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/services/models/login-request.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/services/models/login-response.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/services/models/page-response-course-response.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/services/models/page-response-exam-response.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/services/models/page-response-user-response.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/services/models/register-request.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/services/models/user-response.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/services/models/user-search.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/services/models/user-update-request.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/services/my-service/alert.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/services/my-service/jwt.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/services/request-builder.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/services/services.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/services/services/authentication.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/services/services/course.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/services/services/exam.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/services/services/user.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/app/services/strict-http-response.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/openapi/openapi.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/src/styles.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/tsconfig.app.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-front/tsconfig.spec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-question/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-question/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-question/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-question/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-question/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-question/src/main/java/com/emamagic/institutemanagementquestion/InstituteManagementQuestionApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-question/src/main/java/com/emamagic/institutemanagementquestion/controller/QuestionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-question/src/main/java/com/emamagic/institutemanagementquestion/entity/Question.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-question/src/main/java/com/emamagic/institutemanagementquestion/entity/Type.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-question/src/main/java/com/emamagic/institutemanagementquestion/repository/QuestionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-question/src/main/java/com/emamagic/institutemanagementquestion/service/QuestionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-question/src/main/java/com/emamagic/institutemanagementquestion/service/QuestionServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-question/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/institute-management-question/src/test/java/com/emamagic/institutemanagementquestion/InstituteManagementQuestionApplicationTests.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="isToolWindowVisible" value="false" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2tlizocamBKBDzIotsiIFa6K4Mn" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;ignore.preview.features.used&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;redis&quot;,
+      &quot;postgresql&quot;,
+      &quot;mysql_aurora&quot;,
+      &quot;mongo&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.emamagic.institutemanagementquestion.dto" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.InstituteManagementApplication">
+    <configuration name="InstituteManagementApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="institute-management" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.emamagic.institutemanagement.InstituteManagementApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InstituteManagementQuestionApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="institute-management-question" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.emamagic.institutemanagementquestion.InstituteManagementQuestionApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-125ca727e0f0-intellij.indexing.shared.core-IU-243.24978.46" />
+        <option value="bundled-js-predefined-d6986cc7102b-76f8388c3a79-JavaScript-IU-243.24978.46" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="631d7dd1-5c31-4cee-b3f0-1148b11c72c3" name="Changes" comment="" />
+      <created>1740933327456</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1740933327456</updated>
+      <workItem from="1740933330162" duration="5544000" />
+      <workItem from="1740965451680" duration="6783000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VgoProject">
+    <settings-migrated>true</settings-migrated>
+  </component>
+</project>

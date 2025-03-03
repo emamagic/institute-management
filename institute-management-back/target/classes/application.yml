@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: institute-management
+  profiles:
+    active: dev
+  servlet:
+    multipart:
+      max-file-size: 50MB
+  jackson:
+    property-naming-strategy: SNAKE_CASE
+  sql:
+    init:
+      mode: always
+
+---
+springdoc:
+  default-produces-media-type: application/json
+
+---
+server:
+  servlet:
+    context-path: /api/v1
+
+

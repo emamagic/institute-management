@@ -1,0 +1,30 @@
+<header class="header">
+  <div class="logo">
+    <span *ngIf="userName">Welcome, {{ userName }}</span>
+  </div>
+
+  <div class="user-info">
+    <button class="logout-btn" (click)="logout()">Logout</button>
+  </div>
+</header>
+
+<div class="exam-header">
+  <button class="add-btn" (click)="openAddExamDialog()">+ Add Exam</button>
+</div>
+
+<div class="exam-container">
+  <div class="exam-card" *ngFor="let exam of exams">
+    <div class="exam-info" (click)="openExam(exam)">
+      <h3>{{ exam.title }}</h3>
+      <p>Description: {{ exam.description }}</p>
+      <p>Duration:    {{ exam.duration }} Min</p>
+    </div>
+    <button class="delete-btn" (click)="deleteExam(exam, $event)">Delete</button>
+  </div>
+</div>
+
+<div class="pagination" [hidden]="exams.length==0">
+  <button [disabled]="pageNumber === 1" (click)="prevPage()">Previous</button>
+  <span>Page {{ pageNumber }} of {{ totalPages }}</span>
+  <button [disabled]="pageNumber >= totalPages" (click)="nextPage()">Next</button>
+</div>

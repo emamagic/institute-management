@@ -1,0 +1,76 @@
+<div class="main">
+  <div class="wrapper" [ngStyle]="{ 'transform': 'translateY(-' + getTranslateValue() + '%)' }">
+
+    <div class="panel login">
+      <form #form="ngForm" (ngSubmit)="onLogin()">
+        <h2>Login</h2>
+        <input
+          type="email"
+          name="email"
+          [(ngModel)]="loginData.email"
+          placeholder="Email"
+          required
+        />
+        <input
+          type="password"
+          name="password"
+          [(ngModel)]="loginData.password"
+          placeholder="Password"
+          required
+        />
+        <button type="submit" [disabled]="form.invalid">Login</button>
+      </form>
+      <div class="register-link" (click)="goToRegister()">Register</div>
+    </div>
+
+    <div class="panel register">
+      <div class="back-arrow" (click)="goToLogin()">&#8592;</div>
+      <form #registerForm="ngForm" (ngSubmit)="onRegister()">
+        <h2>Register</h2>
+
+        <input
+          type="email"
+          name="email"
+          [(ngModel)]="registerData.email"
+          placeholder="Email"
+          required
+        />
+
+        <input
+          type="password"
+          name="password"
+          [(ngModel)]="registerData.password"
+          placeholder="Password"
+          required
+        />
+
+        <select name="role" [(ngModel)]="registerData.role" required>
+          <option value="" disabled selected>Select Role</option>
+          <option value="student">Student</option>
+          <option value="teacher">Teacher</option>
+        </select>
+
+        <button type="submit" [disabled]="registerForm.invalid">Register</button>
+      </form>
+    </div>
+
+
+    <div class="panel verification">
+      <form (ngSubmit)="onVerify()">
+        <h2>Verification</h2>
+        <div class="verification-code">
+          <code-input
+            [isCodeHidden]="true"
+            [codeLength]="4"
+            (codeChanged)="onCodeChanged($event)"
+            (codeCompleted)="onCodeCompleted($event)"
+          ></code-input>
+        </div>
+        <button type="submit" [disabled]="!isCodeComplete">Verify Code</button>
+      </form>
+    </div>
+
+
+
+  </div>
+</div>

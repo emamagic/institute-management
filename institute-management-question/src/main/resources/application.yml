@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: institute-management-question
+  data:
+    mongodb:
+      username: emamagic
+      password: 1377
+      port: 27017
+      uri: mongodb://emamagic:1377@localhost:27017/questions
+      auto-index-creation: true
+  jackson:
+    property-naming-strategy: SNAKE_CASE
+server:
+  servlet:
+    context-path: /api/v1

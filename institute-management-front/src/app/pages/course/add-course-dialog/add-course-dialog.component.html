@@ -1,0 +1,21 @@
+<h2 mat-dialog-title>Add New Course</h2>
+<mat-dialog-content>
+  <mat-form-field>
+    <mat-label>Course Name</mat-label>
+    <input matInput [(ngModel)]="course.name" required />
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Start Date</mat-label>
+    <input matInput [(ngModel)]="course.startedAt" type="date" required />
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>End Date</mat-label>
+    <input matInput [(ngModel)]="course.endedAt" type="date" required />
+  </mat-form-field>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button (click)="onCancel()">Cancel</button>
+  <button mat-button color="primary" (click)="onSave()">Save</button>
+</mat-dialog-actions>

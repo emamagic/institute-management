@@ -1,0 +1,55 @@
+spring:
+  datasource:
+    username: emamagic
+    password: 1377
+    url: jdbc:postgresql://localhost:5432/institute-management
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  data:
+    redis:
+      host: localhost
+      port: 6379
+  cache:
+    type: redis
+  mail:
+    host: localhost
+    port: 1025
+    username: emamagic
+    password: emamagic
+    properties:
+      mail:
+        smtp:
+          trust: "*"
+        auth: true
+        starttls:
+          enable: true
+        connectiontimeout: 5000
+        timeout: 3000
+        writetimeout: 5000
+
+---
+application:
+  security:
+    jwt:
+      secret-key: 36d0c6389cf71ddd1b7072417883044331f60f77f92fedeffdc0239a7cd3d9da9047a2b083cdaf0a9724afbc5ef46090794a5aab83b399a8bd66d77c8a8779be102ebb2142670ce9748b98cd764ee9e0759d1fd6c254f5f13b352807fd2a92d8f181dfc013b6d41448392195bd6eea882900d39b3098bc744640e603283264d582ff439bf336a075f84b55e41687e5d084bfd0fe46a018ab6a20578b7b573786ceb83321556ccc790edb68ec4947b7c8580cc739bcdc37dbf7532bd63027762d14d255e7406d221268149cde86ef5ebce407d7fc39a8068a7ce09fdfd820d7af6ec50b4e2b7b0587e0d8e08445d2b46b7ea0883c1199d2a9da6160544e56c112
+      access:
+        expiration: 600000 #10min
+      refresh:
+        expiration: 604800000 #1week
+  mailing:
+    frontend:
+      activation-url: http://localhost:4200/activate-account
+  file:
+    uploads:
+      photos-output-path: ./uploads
+
+---
+logging:
+  level:
+    org:
+      springframework:
+        security: DEBUG
+        filter: DEBUG

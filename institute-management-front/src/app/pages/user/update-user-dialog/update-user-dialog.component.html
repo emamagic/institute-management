@@ -1,0 +1,40 @@
+<div class="dialog-container">
+  <h2>Edit User</h2>
+  <form class="user-form">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" id="name" [(ngModel)]="user.name" name="name" />
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" [(ngModel)]="user.email" name="email" disabled/>
+    </div>
+
+    <div class="form-group">
+      <label for="age">Age:</label>
+      <input type="number" id="age" [(ngModel)]="user.age" name="age" />
+    </div>
+
+    <div class="form-group">
+      <label for="gender">Gender:</label>
+      <select id="gender" [(ngModel)]="user.gender" name="gender">
+        <option value="MALE">Male</option>
+        <option value="FEMALE">Female</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="role">Role:</label>
+      <select id="role" [(ngModel)]="user.role" name="role">
+        <option value="STUDENT">Student</option>
+        <option value="TEACHER">Teacher</option>
+      </select>
+    </div>
+
+    <div class="dialog-actions">
+      <button class="update-btn" (click)="updateUser()">Update</button>
+      <button class="cancel-btn" (click)="closeDialog()">Cancel</button>
+    </div>
+  </form>
+</div>

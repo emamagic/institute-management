@@ -1,0 +1,26 @@
+<header class="header">
+  <div class="logo">
+    <span *ngIf="userName">Welcome, {{ userName }}</span>
+  </div>
+
+  <div class="header-actions" [hidden]="!isAdmin">
+    <button
+      class="tab-btn"
+      [class.active]="activeTab === 'users'"
+      (click)="setActiveTab('users')">Users</button>
+
+    <button
+      class="tab-btn"
+      [class.active]="activeTab === 'courses'"
+      (click)="setActiveTab('courses')">Courses</button>
+  </div>
+
+  <div class="user-info">
+    <button class="logout-btn" (click)="logout()">Logout</button>
+  </div>
+</header>
+
+<div class="content">
+  <app-user *ngIf="activeTab === 'users'"></app-user>
+  <app-course *ngIf="activeTab === 'courses'"></app-course>
+</div>

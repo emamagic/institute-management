@@ -1,0 +1,20 @@
+<div class="course-header">
+  <button class="add-btn" (click)="openAddCourseDialog()" [hidden]="!canCrudCourse">+ Add Course</button>
+</div>
+
+<div class="course-container">
+  <div class="course-card" *ngFor="let course of courses">
+    <div class="course-info" (click)="openCourse(course)">
+      <h3>{{ course.name }}</h3>
+      <p>Started At: {{ course.startedAt }}</p>
+      <p>Ended At: {{ course.endedAt }}</p>
+    </div>
+    <button class="delete-btn" (click)="deleteCourse(course, $event)" [hidden]="!canCrudCourse">Delete</button>
+  </div>
+</div>
+
+<div class="pagination" [hidden]="courses.length==0">
+  <button [disabled]="pageNumber === 1" (click)="prevPage()">Previous</button>
+  <span>Page {{ pageNumber }} of {{ totalPages }}</span>
+  <button [disabled]="pageNumber >= totalPages" (click)="nextPage()">Next</button>
+</div>

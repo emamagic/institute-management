@@ -1,0 +1,12 @@
+<div class="dialog-container">
+  <h2>Select a User</h2>
+
+  <div class="user-list">
+    <div *ngFor="let user of users" class="user-item" (click)="selectUser(user)">
+      <p class="user-name">{{ user.name }}</p>
+      <p class="user-email">{{ user.email }}</p>
+    </div>
+  </div>
+
+  <button class="close-btn" (click)="closeDialog()">Close</button>
+</div>

@@ -1,0 +1,35 @@
+<div class="course-detail-container">
+  <h2>Course Details</h2>
+
+  <div class="course-info">
+    <label>Course Name:</label>
+    <span>{{ course.name }}</span>
+  </div>
+
+  <div class="course-info">
+    <label>Started At:</label>
+    <span>{{ course.startedAt }}</span>
+  </div>
+
+  <div class="course-info">
+    <label>Ended At:</label>
+    <span>{{ course.endedAt }}</span>
+  </div>
+
+  <div class="teacher-section">
+    <h3>Teacher</h3>
+    <p *ngIf="teacher">{{ teacher.name }}</p>
+    <button (click)="openTeacherDialog()">Change Teacher</button>
+  </div>
+
+  <div class="student-section">
+    <h3>Students</h3>
+    <ul>
+      <li *ngFor="let student of students">
+        {{ student.name }}
+        <button class="remove-btn" (click)="removeStudent(student.id!)">Remove</button>
+      </li>
+    </ul>
+    <button (click)="openStudentDialog()">Add Student</button>
+  </div>
+</div>

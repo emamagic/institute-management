@@ -1,0 +1,23 @@
+<h2 mat-dialog-title>Add New Exam</h2>
+
+<mat-dialog-content>
+  <mat-form-field>
+    <mat-label>Title</mat-label>
+    <input matInput [(ngModel)]="exam.title" required />
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Description</mat-label>
+    <textarea matInput [(ngModel)]="exam.description" required></textarea>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Duration (minutes)</mat-label>
+    <input matInput type="number" [(ngModel)]="exam.duration" required />
+  </mat-form-field>
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+  <button mat-button (click)="onCancel()">Cancel</button>
+  <button mat-button color="primary" (click)="onSave()">Save</button>
+</mat-dialog-actions>

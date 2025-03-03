@@ -1,0 +1,14 @@
+INSERT INTO roles (id, type)
+VALUES (1, 'ADMIN')
+ON CONFLICT (id) DO NOTHING;
+INSERT INTO roles (id, type)
+VALUES (2, 'TEACHER')
+ON CONFLICT (id) DO NOTHING;
+INSERT INTO roles (id, type)
+VALUES (3, 'STUDENT')
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO users (id, name, hashed_password, email, age, gender, is_verified,
+                   is_approved, is_profile_completed, role_id, created_at, updated_at, updated_by)
+VALUES (1, 'admin', '123', 'admin@gmail.com', '30', 'MALE', true, true, true,1, now(), null, null)
+ON CONFLICT DO NOTHING;
