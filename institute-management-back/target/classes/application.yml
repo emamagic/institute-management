@@ -8,9 +8,9 @@ spring:
       max-file-size: 50MB
   jackson:
     property-naming-strategy: SNAKE_CASE
-  sql:
-    init:
-      mode: always
+#  sql:
+#    init:
+#      mode: always
 
 ---
 springdoc:

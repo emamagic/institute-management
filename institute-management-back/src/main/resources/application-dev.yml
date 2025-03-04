@@ -30,6 +30,11 @@ spring:
         timeout: 3000
         writetimeout: 5000
 
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
 ---
 application:
   security:

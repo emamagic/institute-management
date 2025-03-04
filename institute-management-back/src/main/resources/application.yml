@@ -8,10 +8,11 @@ spring:
       max-file-size: 50MB
   jackson:
     property-naming-strategy: SNAKE_CASE
-  sql:
-    init:
-      mode: always
-
+#  sql:
+#    init:
+#      mode: always
+server:
+  port: 8081
 ---
 springdoc:
   default-produces-media-type: application/json
