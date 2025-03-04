@@ -9,7 +9,7 @@ public interface QuestionService {
     List<QuestionResponse> getAllForExam(Long userId, Long examId);
     void create(Long userId, CreateQuestionRequest req);
     void add(Long userId, AddQuestionRequest req);
-    ApprovedQuestionResponse approveQuestions(Long userId, Long examId);
+    ApprovedQuestionResponse approveQuestion(Long userId, Long examId);
     QuestionResponse update(Long userId, UpdateQuestionRequest req);
     void delete(Long userId, String questionId);
 }

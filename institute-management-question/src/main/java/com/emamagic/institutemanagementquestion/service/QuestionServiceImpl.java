@@ -81,7 +81,7 @@ public class QuestionServiceImpl implements QuestionService {
     }
 
     @Override
-    public ApprovedQuestionResponse approveQuestions(Long userId, Long examId) {
+    public ApprovedQuestionResponse approveQuestion(Long userId, Long examId) {
         Query query = new Query();
         query.addCriteria(Criteria.where("creator_id").is(userId)
                 .and("exam_id").in(examId));

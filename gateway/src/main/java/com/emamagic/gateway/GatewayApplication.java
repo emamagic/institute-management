@@ -12,6 +12,8 @@ import java.util.Locale;
 @SpringBootApplication
 public class GatewayApplication {
 
+	// todo: separate auth service and create enrich jwt here
+
 	public static void main(String[] args) {
 		SpringApplication.run(GatewayApplication.class, args);
 	}

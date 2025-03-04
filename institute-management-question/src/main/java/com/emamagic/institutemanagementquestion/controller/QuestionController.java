@@ -1,6 +1,9 @@
 package com.emamagic.institutemanagementquestion.controller;
 
+import com.emamagic.institutemanagementquestion.dto.ApprovedQuestionResponse;
+import com.emamagic.institutemanagementquestion.dto.CreateQuestionRequest;
 import com.emamagic.institutemanagementquestion.dto.QuestionResponse;
+import com.emamagic.institutemanagementquestion.dto.UpdateQuestionRequest;
 import com.emamagic.institutemanagementquestion.service.QuestionService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -16,18 +19,43 @@ import java.util.List;
 public class QuestionController {
     private final QuestionService svc;
 
-    //todo: add global exception
-    //todo: add config-server and eureka
-    //todo: security configuration (gateway-jwt)
+    // todo: check authorities in security-filter-chain instead of here
 
     @GetMapping
     @PreAuthorize("hasAuthority('TEACHER')")
-    public ResponseEntity<List<QuestionResponse>> questions(
-            @AuthenticationPrincipal(expression = "id") Long userId,
-            @RequestParam("course-id") String courseId
+    public ResponseEntity<List<QuestionResponse>> questionsForBank(
+            @AuthenticationPrincipal(expression = "id") Long userId
     ) {
-//        return ResponseEntity.ok(svc.getAll(userId, Long.valueOf(courseId)));
-        return null;
+        return ResponseEntity.ok(svc.getAllForBank(userId));
+    }
+
+    @GetMapping
+    @PreAuthorize("hasAuthority('TEACHER')")
+    public ResponseEntity<List<QuestionResponse>> questionsForExam(
+            @AuthenticationPrincipal(expression = "id") Long userId,
+            @RequestParam("exam-id") String examId
+    ) {
+        return ResponseEntity.ok(svc.getAllForExam(userId, Long.valueOf(examId)));
+    }
+
+
+    @PostMapping
+    @PreAuthorize("hasAuthority('TEACHER')")
+    public ResponseEntity<Void> create(
+            @AuthenticationPrincipal(expression = "id") Long userId,
+            @RequestBody CreateQuestionRequest req
+    ) {
+        svc.create(userId, req);
+        return ResponseEntity.ok().build();
+    }
+
+    @PatchMapping
+    @PreAuthorize("hasAuthority('TEACHER')")
+    public ResponseEntity<ApprovedQuestionResponse> approveQuestion(
+            @AuthenticationPrincipal(expression = "id") Long userId,
+            @RequestParam("exam-id") String examId
+    ) {
+        return ResponseEntity.ok(svc.approveQuestion(userId, Long.valueOf(examId)));
     }
 
     @PostMapping("/{id}")
@@ -39,6 +67,24 @@ public class QuestionController {
         return ResponseEntity.ok().build();
     }
 
+    @PutMapping("")
+    @PreAuthorize("hasAuthority('TEACHER')")
+    public ResponseEntity<QuestionResponse> update(
+            @AuthenticationPrincipal(expression = "id") Long userId,
+            @RequestBody UpdateQuestionRequest req
+    ) {
+        return ResponseEntity.ok(svc.update(userId, req));
+    }
+
+    @DeleteMapping
+    @PreAuthorize("hasAuthority('TEACHER')")
+    public ResponseEntity<Void> delete(
+            @AuthenticationPrincipal(expression = "id") Long userId,
+            @RequestParam("question-id") String questionId
+    ) {
+        svc.delete(userId, questionId);
+        return ResponseEntity.ok().build();
+    }
 
 }
 
