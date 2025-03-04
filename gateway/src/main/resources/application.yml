@@ -6,9 +6,14 @@ spring:
       mvc:
         routes:
           - id: main
-            uri: lb://INSTITUTE-MANAGEMENT
+            uri: lb://main
             predicates:
-              - Path=/
+              - Path=/**
+            filters:
+              - name: CircuitBreaker
+                args:
+                  name: main
+                  fallbackUri: forward:/fallback/service-unavailable
 
 eureka:
   client:

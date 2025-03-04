@@ -4,23 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="631d7dd1-5c31-4cee-b3f0-1148b11c72c3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/institute-management-back/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/institute-management-back/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/institute-management-back/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/institute-management-back/src/main/resources/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/institute-management-back/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/institute-management-back/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/institute-management-back/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/institute-management-back/src/main/resources/data.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/institute-management-back/target/classes/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/institute-management-back/target/classes/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/institute-management-back/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/institute-management-back/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/institute-management-back/target/classes/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/institute-management-back/target/classes/data.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/institute-management-question/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/institute-management-question/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/institute-management-question/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/institute-management-question/src/main/resources/application.yml" afterDir="false" />
-    </list>
+    <list default="true" id="631d7dd1-5c31-4cee-b3f0-1148b11c72c3" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -65,50 +49,56 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
-    &quot;Spring Boot.ConfigServerApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.EurekaServerApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.InstituteManagementApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.dev.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
-    &quot;ignore.preview.features.used&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/amirhossein/Developer/Project/institute-management/gateway&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "Spring Boot.ConfigServerApplication.executor": "Run",
+    "Spring Boot.EurekaServerApplication.executor": "Run",
+    "Spring Boot.GatewayApplication.executor": "Run",
+    "Spring Boot.InstituteManagementApplication.executor": "Run",
+    "Spring Boot.dev.executor": "Run",
+    "git-widget-placeholder": "feat/service-comminucation",
+    "go.import.settings.migrated": "true",
+    "ignore.preview.features.used": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/amirhossein/Developer/Project/institute-management/gateway/src/main/resources/i18n",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "File.Encoding",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;redis&quot;,
-      &quot;postgresql&quot;,
-      &quot;mysql_aurora&quot;,
-      &quot;mongo&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "redis",
+      "postgresql",
+      "mysql_aurora",
+      "mongo"
     ]
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/gateway/src/main/resources/i18n" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.emamagic.gateway" />
       <recent name="com.emamagic.institutemanagementquestion.dto" />
     </key>
   </component>
@@ -190,6 +180,7 @@
       <workItem from="1741069777259" duration="1239000" />
       <workItem from="1741074171461" duration="505000" />
       <workItem from="1741075438580" duration="658000" />
+      <workItem from="1741080852519" duration="3221000" />
     </task>
     <servers />
   </component>
@@ -198,5 +189,9 @@
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
