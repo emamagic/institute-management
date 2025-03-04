@@ -6,6 +6,9 @@
       <list>
         <option value="$PROJECT_DIR$/institute-management-back/pom.xml" />
         <option value="$PROJECT_DIR$/institute-management-question/pom.xml" />
+        <option value="$PROJECT_DIR$/config-server/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka-server/pom.xml" />
+        <option value="$PROJECT_DIR$/gateway/pom.xml" />
       </list>
     </option>
   </component>
